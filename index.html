@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Centre for Combustion Technology and Alternative Energy (CTAE Lab)</title>
     
-    <!-- SEO Meta Tags -->
     <meta name="description" content="CTAE Lab at KMUTNB focuses on the research and development of innovative combustion technologies, alternative fuels (hydrogen, ammonia), and decarbonisation solutions.">
     <meta name="keywords" content="CTAE Lab, KMUTNB, Combustion Technology, Alternative Energy, Hydrogen, Ammonia, Decarbonisation, Automotive Engineering">
     <meta name="author" content="CTAE Lab, KMUTNB">
@@ -13,137 +12,36 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Basic Settings */
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        
-        /* Top Navigation Bar */
-        header {
-            background-color: #003366; 
-            color: white;
-            padding: 0.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            max-height: 110px;
-        }
-        
-        /* Logo Container Styles */
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-        
-        .lab-logo {
-            height: 100px; 
-            width: auto;
-            transform: scale(2.2);
-            transform-origin: left center;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f8f9fa; color: #333; }
+        header { background-color: #003366; color: white; padding: 0.5rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; max-height: 110px; }
+        .logo-container { display: flex; align-items: center; }
+        .lab-logo { height: 100px; width: auto; transform: scale(2.2); transform-origin: left center; }
+        nav a { color: white; text-decoration: none; margin-left: 1.5rem; font-weight: 600; transition: color 0.3s; }
         nav a:hover { color: #ffcc00; }
-
-        /* Hero Section */
-        .hero {
-            background-color: #e9ecef;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
+        .hero { background-color: #e9ecef; padding: 4rem 2rem; text-align: center; }
         .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #003366; }
         .hero p { font-size: 1.2rem; max-width: 800px; margin: auto; }
-
-        /* Main Content Layout */
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        h2.section-title {
-            text-align: center;
-            color: #003366;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid #ffcc00;
-            display: inline-block;
-            padding-bottom: 0.5rem;
-        }
-
-        /* Cards for Research and Team Members */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-        .card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-        }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 2rem; }
+        h2.section-title { text-align: center; color: #003366; margin-bottom: 2rem; border-bottom: 2px solid #ffcc00; display: inline-block; padding-bottom: 0.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; }
         .card:hover { transform: translateY(-5px); }
         .card h3 { margin-top: 0; color: #00509e; }
-        
-        /* Publications List Styles */
-        .pub-list {
-            list-style-type: decimal;
-            padding-left: 1.5rem;
-        }
-        .pub-list li {
-            margin-bottom: 1.2rem;
-            line-height: 1.6;
-        }
-        .pub-link {
-            color: #00509e;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9em;
-            margin-left: 8px;
-        }
-        .pub-link:hover {
-            text-decoration: underline;
-        }
-        .loading-text {
-            color: #666;
-            font-style: italic;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #212529;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
+        footer { background-color: #212529; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="logo.png" alt="CTAE Lab Logo" class="lab-logo">
+            <a href="index.html"><img src="logo.png" alt="CTAE Lab Logo" class="lab-logo"></a>
         </div>
         <nav>
             <a href="#about">About Us</a>
             <a href="#research">Research</a>
             <a href="#team">Our Team</a>
-            <a href="#publications">Publications</a>
+            <!-- ลิงก์ชี้ไปยังหน้าผลงานวิจัยใหม่ -->
+            <a href="publications.html">Publications</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -154,8 +52,6 @@
         <p>Focusing on the research and development of innovative combustion technologies and sustainable alternative energy solutions to meet the real-world demands of industry and society.</p>
     </section>
 
-    <!-- (ส่วน Research และ Team ยังคงเหมือนเดิม เพื่อความกระชับจึงละไว้บางส่วน แต่โค้ดจริงต้องใส่ให้ครบ) -->
-    
     <div class="container" id="research">
         <div style="text-align: center;"><h2 class="section-title">Research Areas</h2></div>
         <div class="grid">
@@ -183,26 +79,69 @@
                 <p>Expertise: Internal combustion engine, Diesel Aftertreatment, Diesel Engine and Particulate matter.</p>
             </div>
             <div class="card">
+                <h3>Assoc. Dr. Boonlue Sawatmongkhon</h3>
+                <p><strong>Co-Principal Investigator</strong></p>
+                <p>Expertise: Aftertreatment systems, Catalysis and Computational fluid dynamics (CFD).</p>
+            </div>
+            <div class="card">
+                <h3>Assoc. Dr. Thawatchai Wongchang</h3>
+                <p><strong>Co-Principal Investigator</strong></p>
+                <p>Expertise: Reforming, Catalyst, Biomass, Gasifier and Pyrolysis.</p>
+            </div>
+            <div class="card">
+                <h3>Asst. Dr. Sak Sittichompoo</h3>
+                <p><strong>Co-Principal Investigator</strong></p>
+                <p>Expertise: Hydrogen production, Fuel reforming, Emission After Treatment and Internal combustion engine.</p>
+            </div>
+            <div class="card">
+                <h3>Dr. Teerapong Iamcheerangkoon</h3>
+                <p><strong>Co-Principal Investigator</strong></p>
+                <p>Expertise: Internal combustion engine, Diesel Aftertreatment, Particulate matter and Non-thermal plasma.</p>
+            </div>
+            <div class="card">
+                <h3>Dr. Pichitpon Neamyou</h3>
+                <p><strong>Co-Principal Investigator</strong></p>
+                <p>Expertise: Internal combustion engine, GDI engine, Engine management system and Non-thermal plasma.</p>
+            </div>
+            <div class="card">
+                <h3>Ms. Warirat Temwutthikun</h3>
+                <p><strong>Co-Principal Investigator</strong></p>
+                <p>Expertise: Internal combustion engine, Hydrogen reforming technologies and Aftertreatment technologies.</p>
+            </div>
+            <div class="card">
+                <h3>Dr. Punya Promhuad</h3>
+                <p><strong>Co-Principal Investigator</strong></p>
+                <p>Expertise: Oxidation catalyst, PM oxidation, Oxide support, Electric vehicle and CAN Bus.</p>
+            </div>
+            <div class="card">
                 <h3>Tanapat Prodkornburee</h3>
                 <p><strong>Ph.D. Candidate</strong></p>
                 <p>Research Topic: Plasma-Catalytic Ammonia Cracking for Combustion Enhancement.</p>
             </div>
-            <!-- คุณสามารถเติมรายชื่อทีมงานคนอื่นๆ ลงในส่วนนี้ได้ตามโค้ดก่อนหน้า -->
-        </div>
-    </div>
-    
-    <!-- Publications Section -->
-    <div class="container" id="publications">
-        <div style="text-align: center;"><h2 class="section-title">Selected Publications (Auto-Updated)</h2></div>
-        <div class="grid" style="grid-template-columns: 1fr;">
             <div class="card">
-                <h3 style="margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #ddd;">Recent Publications by Assoc. Dr. Kampanart Theinnoi</h3>
-                
-                <!-- จุดที่ JavaScript จะนำข้อมูลมาแสดง -->
-                <ul class="pub-list" id="dynamic-pub-list">
-                    <li class="loading-text">🔄 Fetching latest publications from international databases...</li>
-                </ul>
-                
+                <h3>Patchanee Bunjaroen</h3>
+                <p><strong>Ph.D. Candidate</strong></p>
+                <p>Research Topic: Optimisation of Hydrogen-Ammonia Co-Combustion Characteristics Using Response Surface Methodology (RSM)</p>
+            </div>
+            <div class="card">
+                <h3>Aunyamanee Sawatdimongkon</h3>
+                <p><strong>Ph.D. Candidate</strong></p>
+                <p>Research Topic: Characterisation of Catalysts for Ammonia Decomposition and Hydrogen Production.</p>
+            </div>
+            <div class="card">
+                <h3>Ketsiree Ketpirune</h3>
+                <p><strong>Ph.D. Student</strong></p>
+                <p>Research Topic: - </p>
+            </div>
+            <div class="card">
+                <h3>Pokpong Arsa</h3>
+                <p><strong>Master Student</strong></p>
+                <p>Research Topic: Evaluating the Performance and Emissions of Ammonia-Fueled Direct Injection Engines.</p>
+            </div>
+            <div class="card">
+                <h3>Sarana Oumphan</h3>
+                <p><strong>Master Student</strong></p>
+                <p>Research Topic: Ozone-Assisted Oxidation of Diesel Particulate Matter in DPF Systems.</p>
             </div>
         </div>
     </div>
@@ -214,76 +153,5 @@
         <p>&copy; 2026 CTAE Lab. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript สำหรับดึงข้อมูลงานวิจัยอัตโนมัติจาก CrossRef API -->
-    <script>
-        async function fetchPublications() {
-            const pubList = document.getElementById('dynamic-pub-list');
-            
-            try {
-                // ค้นหาเปเปอร์ที่มีชื่อ Kampanart Theinnoi เรียงลำดับจากปีล่าสุด (ดึงมา 15 บทความล่าสุด)
-                const url = 'https://api.crossref.org/works?query.author=Kampanart+Theinnoi&select=title,author,container-title,volume,issue,page,published,URL&rows=15&sort=published&order=desc';
-                const response = await fetch(url);
-                const data = await response.json();
-                const items = data.message.items;
-                
-                pubList.innerHTML = ''; // ล้างข้อความ Loading
-                
-                if (items.length === 0) {
-                    pubList.innerHTML = '<li>No publications found at this moment.</li>';
-                    return;
-                }
-
-                // วนลูปนำข้อมูลเปเปอร์แต่ละตัวมาแสดงผล
-                items.forEach(item => {
-                    // กรองเฉพาะงานที่มีชื่อ Theinnoi ป้องกัน API ดึงงานผิดมาปน
-                    let isAuthorMatch = false;
-                    let authorStr = 'Kampanart Theinnoi et al.';
-                    
-                    if (item.author) {
-                        authorStr = item.author.map(a => {
-                            if (a.family && a.family.includes('Theinnoi')) isAuthorMatch = true;
-                            let givenName = a.given ? a.given.charAt(0) + '.' : '';
-                            return `${givenName} ${a.family || ''}`.trim();
-                        }).join(', ');
-                    }
-                    
-                    if (!isAuthorMatch) return; // ข้ามเปเปอร์ที่ไม่มีชื่ออาจารย์
-
-                    const title = item.title ? item.title[0] : 'Untitled Paper';
-                    const journal = item['container-title'] ? item['container-title'][0] : 'International Journal';
-                    const volume = item.volume ? `vol. ${item.volume}` : '';
-                    const page = item.page ? `p. ${item.page}` : '';
-                    
-                    let year = '';
-                    if (item.published && item.published['date-parts']) {
-                        year = item.published['date-parts'][0][0];
-                    }
-
-                    // จัดรูปแบบข้อมูล
-                    let referenceText = `${authorStr}, "${title}," <em>${journal}</em>`;
-                    if (volume) referenceText += `, ${volume}`;
-                    if (page) referenceText += `, ${page}`;
-                    if (year) referenceText += `, ${year}.`;
-
-                    // สร้างบรรทัด li ใหม่
-                    const li = document.createElement('li');
-                    li.innerHTML = `${referenceText} <a href="${item.URL}" target="_blank" class="pub-link">[DOI Link]</a>`;
-                    pubList.appendChild(li);
-                });
-                
-                // กรณีที่กรองแล้วไม่เหลือเปเปอร์เลย
-                if (pubList.innerHTML === '') {
-                    pubList.innerHTML = '<li>Publications are currently being updated in the database.</li>';
-                }
-
-            } catch (error) {
-                pubList.innerHTML = '<li>Error loading publications. Please try again later.</li>';
-                console.error('Error fetching publications:', error);
-            }
-        }
-
-        // สั่งให้สคริปต์ทำงานทันทีที่โหลดหน้าเว็บเสร็จ
-        window.onload = fetchPublications;
-    </script>
 </body>
 </html>
