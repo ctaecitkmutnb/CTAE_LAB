@@ -14,10 +14,8 @@
     <style>
         body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f8f9fa; color: #333; }
         
-        /* Top Navigation Bar (Desktop) */
+        /* Top Navigation Bar */
         header { background-color: #003366; color: white; padding: 0.8rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        
-        /* Logo Container */
         .logo-container { display: flex; align-items: center; }
         .lab-logo { height: 55px; width: auto; transform: scale(1.6); transform-origin: left center; }
         
@@ -25,7 +23,7 @@
         nav a { color: white; text-decoration: none; font-weight: 600; transition: color 0.3s; }
         nav a:hover { color: #ffcc00; }
 
-        /* --- Responsive Mobile Screen --- */
+        /* Responsive Mobile Screen */
         @media (max-width: 768px) {
             header { flex-direction: column; align-items: center; padding: 1rem 0.5rem; gap: 0.8rem; position: static; }
             .lab-logo { height: 45px; transform: scale(1.2); transform-origin: center center; }
@@ -39,9 +37,24 @@
         .container { max-width: 1000px; margin: 2rem auto; padding: 0 2rem; }
         h2.section-title { text-align: center; color: #003366; margin-bottom: 2rem; border-bottom: 2px solid #ffcc00; display: inline-block; padding-bottom: 0.5rem; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        
+        /* Card Styles */
         .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; }
         .card:hover { transform: translateY(-5px); }
         .card h3 { margin-top: 0; color: #00509e; }
+        
+        /* Team Member Specific Styles */
+        .team-card { text-align: center; } /* จัดข้อความให้อยู่กึ่งกลาง */
+        .member-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+            object-fit: cover; /* ป้องกันรูปเบี้ยว */
+            margin: 0 auto 1rem auto;
+            display: block;
+            border: 3px solid #e9ecef; /* กรอบสีเทาอ่อนรอบรูป */
+        }
+
         footer { background-color: #212529; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
     </style>
 </head>
@@ -87,77 +100,97 @@
     <div class="container" id="team">
         <div style="text-align: center;"><h2 class="section-title">Our Team</h2></div>
         <div class="grid">
-            <div class="card">
+            <!-- PI & Co-PIs -->
+            <div class="card team-card">
+                <img src="pic-kampanart.jpg" alt="Dr. Kampanart Theinnoi" class="member-img">
                 <h3>Assoc. Dr. Kampanart Theinnoi</h3>
                 <p><strong>Principal Investigator</strong></p>
                 <p>Expertise: Internal combustion engine, Diesel Aftertreatment, Diesel Engine and Particulate matter.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-boonlue.jpg" alt="Dr. Boonlue Sawatmongkhon" class="member-img">
                 <h3>Assoc. Dr. Boonlue Sawatmongkhon</h3>
                 <p><strong>Co-Principal Investigator</strong></p>
                 <p>Expertise: Aftertreatment systems, Catalysis and Computational fluid dynamics (CFD).</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-thawatchai.jpg" alt="Dr. Thawatchai Wongchang" class="member-img">
                 <h3>Assoc. Dr. Thawatchai Wongchang</h3>
                 <p><strong>Co-Principal Investigator</strong></p>
                 <p>Expertise: Reforming, Catalyst, Biomass, Gasifier and Pyrolysis.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-sak.jpg" alt="Dr. Sak Sittichompoo" class="member-img">
                 <h3>Asst. Dr. Sak Sittichompoo</h3>
                 <p><strong>Co-Principal Investigator</strong></p>
                 <p>Expertise: Hydrogen production, Fuel reforming, Emission After Treatment and Internal combustion engine.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-teerapong.jpg" alt="Dr. Teerapong Iamcheerangkoon" class="member-img">
                 <h3>Dr. Teerapong Iamcheerangkoon</h3>
                 <p><strong>Co-Principal Investigator</strong></p>
                 <p>Expertise: Internal combustion engine, Diesel Aftertreatment, Particulate matter and Non-thermal plasma.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-pichitpon.jpg" alt="Dr. Pichitpon Neamyou" class="member-img">
                 <h3>Dr. Pichitpon Neamyou</h3>
                 <p><strong>Co-Principal Investigator</strong></p>
                 <p>Expertise: Internal combustion engine, GDI engine, Engine management system and Non-thermal plasma.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-warirat.jpg" alt="Ms. Warirat Temwutthikun" class="member-img">
                 <h3>Ms. Warirat Temwutthikun</h3>
                 <p><strong>Co-Principal Investigator</strong></p>
                 <p>Expertise: Internal combustion engine, Hydrogen reforming technologies and Aftertreatment technologies.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-punya.jpg" alt="Dr. Punya Promhuad" class="member-img">
                 <h3>Dr. Punya Promhuad</h3>
                 <p><strong>Co-Principal Investigator</strong></p>
                 <p>Expertise: Oxidation catalyst, PM oxidation, Oxide support, Electric vehicle and CAN Bus.</p>
             </div>
-            <div class="card">
+            
+            <!-- Ph.D. Candidates & Students -->
+            <div class="card team-card">
+                <img src="pic-tanapat.jpg" alt="Tanapat Prodkornburee" class="member-img">
                 <h3>Tanapat Prodkornburee</h3>
                 <p><strong>Ph.D. Candidate</strong></p>
                 <p>Research Topic: Plasma-Catalytic Ammonia Cracking for Combustion Enhancement.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-patchanee.jpg" alt="Patchanee Bunjaroen" class="member-img">
                 <h3>Patchanee Bunjaroen</h3>
                 <p><strong>Ph.D. Candidate</strong></p>
                 <p>Research Topic: Optimisation of Hydrogen-Ammonia Co-Combustion Characteristics Using Response Surface Methodology (RSM)</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-aunyamanee.jpg" alt="Aunyamanee Sawatdimongkon" class="member-img">
                 <h3>Aunyamanee Sawatdimongkon</h3>
                 <p><strong>Ph.D. Candidate</strong></p>
                 <p>Research Topic: Characterisation of Catalysts for Ammonia Decomposition and Hydrogen Production.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-ketsiree.jpg" alt="Ketsiree Ketpirune" class="member-img">
                 <h3>Ketsiree Ketpirune</h3>
                 <p><strong>Ph.D. Student</strong></p>
                 <p>Research Topic: - </p>
             </div>
-            <div class="card">
+            
+            <!-- Master Students -->
+            <div class="card team-card">
+                <img src="pic-pokpong.jpg" alt="Pokpong Arsa" class="member-img">
                 <h3>Pokpong Arsa</h3>
                 <p><strong>Master Student</strong></p>
                 <p>Research Topic: Evaluating the Performance and Emissions of Ammonia-Fueled Direct Injection Engines.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-sarana.jpg" alt="Sarana Oumphan" class="member-img">
                 <h3>Sarana Oumphan</h3>
                 <p><strong>Master Student</strong></p>
                 <p>Research Topic: Ozone-Assisted Oxidation of Diesel Particulate Matter in DPF Systems.</p>
             </div>
-            <div class="card">
+            <div class="card team-card">
+                <img src="pic-krittimook.jpg" alt="Krittimook Navakijkul" class="member-img">
                 <h3>Krittimook Navakijkul</h3>
                 <p><strong>Master Student</strong></p>
                 <p>Research Topic: - </p>
