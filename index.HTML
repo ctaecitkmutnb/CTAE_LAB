@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Centre for Combustion Technology and Alternative Energy (CTAE Lab)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Settings */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        /* Top Navigation Bar */
+        header {
+            background-color: #003366; /* University/Lab primary color */
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        /* Logo Container Styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px; /* Space between logo and text */
+        }
+        .lab-logo {
+            height: 40px; /* Adjust the height of your logo here */
+            width: auto;
+            border-radius: 4px; /* Optional: adds slightly rounded corners to the logo */
+        }
+        
+        header h1 { margin: 0; font-size: 1.5rem; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #ffcc00; }
+
+        /* Hero Section */
+        .hero {
+            background-color: #e9ecef;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #003366; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: auto; }
+
+        /* Main Content Layout */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        h2.section-title {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #ffcc00;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Cards for Research and Team Members */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-top: 0; color: #00509e; }
+
+        /* Footer */
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <!-- Replace "logo.png" with the actual path/name of your logo file -->
+            <img src="logo.png" alt="CTAE Lab Logo" class="lab-logo">
+            <h1>CTAE Lab</h1>
+        </div>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#research">Research</a>
+            <a href="#team">Our Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <h2>Welcome to the CTAE Lab</h2>
+        <p>Automotive Engineering Technology (AmET), College of Industrial Technology, KMUTNB</p>
+        <p>Focusing on the research and development of innovative combustion technologies and sustainable alternative energy solutions to meet the real-world demands of industry and society.</p>
+    </section>
+
+    <div class="container" id="research">
+        <div style="text-align: center;"><h2 class="section-title">Research Areas</h2></div>
+        <div class="grid">
+            <div class="card">
+                <h3>🌱 Carbon-Free & Alternative Fuels</h3>
+                <p>Researching and developing zero-carbon energy sources, including hydrogen, ammonia, and advanced biofuels, for a sustainable future.</p>
+            </div>
+            <div class="card">
+                <h3>⚡ Nonthermal Plasma & Catalysis</h3>
+                <p>Utilising innovative catalysts and nonthermal plasma technologies to enhance energy conversion and fuel reforming processes.</p>
+            </div>
+            <div class="card">
+                <h3>🌍 Decarbonisation & Emission Reduction</h3>
+                <p>Developing cutting-edge solutions to mitigate greenhouse gas emissions and drive industrial decarbonisation towards net-zero targets.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="team">
+        <div style="text-align: center;"><h2 class="section-title">Our Team</h2></div>
+        <div class="grid">
+            <div class="card">
+                <h3>Assoc. Dr. Kampanart Theinnoi</h3>
+                <p><strong>Team Head</strong></p>
+                <p>Expertise: Internal combustion engine, Diesel Aftertreatment, Diesel Engine and Particualte matter.</p>
+            </div>
+            <div class="card">
+                <h3>Tanapat Prodkornburee</h3>
+                <p><strong>Ph.D. Candidate</strong></p>
+                <p>Research Topic: Plasma-Catalytic Ammonia Cracking for Combustion Enhancement.</p>
+            </div>
+            <div class="card">
+                <h3>Patchanee Bunjaroen</h3>
+                <p><strong>Ph.D. Candidate</strong></p>
+                <p>Research Topic: Optimization of Hydrogen-Ammonia Co-Combustion Characteristics Using Response Surface Methodology (RSM)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 CATE Lab, 63rd Building, 1st Floor, KMUTNB</p>
+        <p>📧 Email: CTAE.CIT.KMUTNB@gmail.com | 📞 Phone: +66 (782) 236-9123</p>
+        <p>&copy; 2026 CTAE Lab. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
